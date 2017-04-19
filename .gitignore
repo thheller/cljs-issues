@@ -1,0 +1,14 @@
+target/
+classes/
+checkouts/
+out/
+js/
+css/
+lib/
+pom.xml
+pom.xml.asc
+*.iml
+*.class
+/.idea
+.DS_Store
+
