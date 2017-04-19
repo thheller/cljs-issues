@@ -1,4 +1,4 @@
-Ticket at: http://dev.clojure.org/jira/browse/CLJS-2007
+Ticket at: http://dev.clojure.org/jira/browse/CLJS-2011
 
 ## Problem
 
@@ -47,6 +47,6 @@ Adding remaining namespaces to :cljs-base
   adding entry (foo.a)
 ```
 
-- `foo.b` was never used and should not have been included in the build.
+- `foo.b` was never referenced and should not have been included in the build.
 - `foo.a` was only used by `foo.main` but ended up in the `cljs_base.js` module since it is a transitive dependency the user did not specify. It should have been in the `:main` module before going into Closure.
 - `main.js` only contains something like `console.log("main loaded",Fe);` where `Fe` is the keyword which was constructed in the `cljs_base.js` although it was only used in this module.
