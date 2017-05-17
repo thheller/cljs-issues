@@ -2,9 +2,9 @@ Ticket at: http://dev.clojure.org/jira/browse/CLJS-2040
 
 ## Problem
 
-The CLJS compiler that all Closure compatible JS will be in the `goog.*` namespace.
+The CLJS compiler assumes that all Closure compatible JS will be in the `goog.*` namespace.
 
-This assumption is bad and produces non-optimal code if there is any other Closure JS in a build.
+This assumption is bad and produces non-optimal code if there is any other Closure JS files in a build.
 
 ```
 java -cp ../cljs.jar:src:src-closure clojure.main build.clj
