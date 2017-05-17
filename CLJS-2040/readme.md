@@ -30,3 +30,7 @@ goog.string.urlEncode("foo");
 The `gstr/urlEncode` uses the good form but the `x/demo` invoke uses the CLJS style invoke and will always end up in `.call`.
 
 The code still works but should be optimized.
+
+```
+dummy.foo.demo((1),(2));
+```
