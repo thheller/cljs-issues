@@ -6,6 +6,5 @@
   "src"
   {:output-dir "out"
    :optimizations :none
-   :verbose true
-   :static-fns true})
+   :verbose true})
 

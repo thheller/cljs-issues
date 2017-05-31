@@ -11,4 +11,5 @@
 
   :source-paths
   ["modules/src"
-   "CLJS-2040/src"])
+   "CLJS-2040/src"
+   "missing-require/src"])
